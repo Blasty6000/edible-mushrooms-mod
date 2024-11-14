@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ediblemushrooms",
+	"version": "${version}",
+	"name": "Edible Mushrooms Mod",
+	"description": "A mod that makes mushrooms edible.",
+	"authors": [
+		"Ivan-Asen"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ediblemushrooms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ivan.edible_mushrooms.EdibleMushroomsMod"
+		],
+		"fabric-datagen": [
+			"net.ivan.edible_mushrooms.EdibleMushroomsModDataGenerator"
+		],
+		"client": [
+			"net.ivan.edible_mushrooms.edibleMushroomModClient"
+		]
+	},
+	"mixins": [
+		"ediblemushrooms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
